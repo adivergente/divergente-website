@@ -4,6 +4,9 @@
       <particles/>
     </section>
     <HomeAgencia/>
+    <HomeEquipo/>
+    <HomeServicios/>
+    <HomeContacto/>
   </div>
 </template>
 

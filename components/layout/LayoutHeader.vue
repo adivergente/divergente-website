@@ -65,13 +65,13 @@ export default {
   .fixed_nav {
     position: fixed;
     left: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background: #111;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background: #000;
     transform: translateY(-100%);
     animation: menu .3s linear 0.3s forwards;
     .logo {
-      width: 4rem;
+      width: 3.5rem;
     }
   }
 }

@@ -28,6 +28,7 @@ module.exports = {
     'vue/max-attributes-per-line': 'off',
     'vue/singleline-html-element-content-newline': 'off',
     'vue/multiline-html-element-content-newline': 'off',
-    'vue/html-closing-bracket-spacing': 'off'
+    'vue/html-closing-bracket-spacing': 'off',
+    'vue/no-v-html': 'off'
   }
 }

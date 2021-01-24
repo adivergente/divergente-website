@@ -1,26 +1,33 @@
 <template>
   <section class="py_section px-12 black">
+    <div class="nav_marker" id="agencia"></div>
     <h1 class="section_title white--text mb-8">
       01/ <br>
       AGENCIA
     </h1>
     <v-row>
       <v-col cols="auto" class="links">
-        <a
-          v-for="({title}, i) in links"
-          :key="i"
-          href="#"
-          class="tab_item"
-          :class="{ 'active': i === active }"
-          @click.prevent="active = i"
-        >
-          {{ title }}
-        </a>
+        <ul class="tabs">
+          <li
+            v-for="({title}, i) in links"
+            :key="i"
+            href="#"
+          >
+            <a
+              href="#"
+              class="tabs__item"
+              :class="{ 'active': i === active }"
+              @click.prevent="active = i"
+            >
+              {{ title }}
+            </a>
+          </li>
+        </ul>
       </v-col>
-      <v-col>
+      <v-col class="relative">
         <span v-for="({description}, index) in links" :key="index">
           <transition name="tab-fade" mode="out-in">
-            <span class="value" v-if="active == index" :key="index">
+            <span v-if="active == index" :key="index" class="value">
               {{ description }}
             </span>
           </transition>
@@ -49,7 +56,7 @@ export default {
           title: 'VALORES',
           description: 'Doluptatibus similique ipsum veniam sequi consequatur. Minima, reiciendis ut dolorem, beatae cupiditate iure tempora ensectetur adipisicing elit. Debitis quos alias vel numquam commodi est dolorem, eius facere ducimu architecto cum ipsam suscipit pariatur vero modi? Officia consequatur corporis commodi?'
         }
-      ],
+      ]
     }
   }
 }
@@ -61,6 +68,7 @@ export default {
 }
 .value {
   position: absolute;
+  left: 0;
   // transform: translateX(10px);
 }
 .tab-fade-enter-active {
