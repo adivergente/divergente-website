@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <!-- <LayoutHeader :light-mode="headerLightMode"/> -->
+    <LayoutHeader/>
     <v-main>
       <nuxt />
     </v-main>
