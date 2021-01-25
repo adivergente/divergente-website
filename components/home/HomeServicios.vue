@@ -1,6 +1,6 @@
 <template>
-  <section class="py_section black px-12">
-    <div class="nav_marker" id="servicios"></div>
+  <section class="p_section black">
+    <div id="servicios" class="nav_marker"></div>
     <h1 class="section_title white--text mb-8">
       03/ <br>
       SERVICIOS
@@ -68,7 +68,10 @@ export default {
 <style lang="scss" scoped>
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5em 0.8em;
+  @media screen and ($desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 </style>

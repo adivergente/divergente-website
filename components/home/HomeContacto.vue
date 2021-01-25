@@ -1,6 +1,6 @@
 <template>
-  <section class="py_section px-12">
-    <div class="nav_marker" id="contacto"></div>
+  <section class="p_section">
+    <div id="contacto" class="nav_marker"></div>
     <v-row>
       <v-col>
         <h1 class="section_title white--text mb-8">
@@ -43,23 +43,27 @@
         </v-form>
       </v-col>
       <v-col>
-        <div class="px-6 pt-12">
+        <div class="pt-12 px-sm-12">
           <h2 class="white--text font-weight-medium mb-6">UBICACIÓN</h2>
           <p class="mb-12">
             Av. Lázaro Cardenas #4586 Col. Chapultepec Oriente <br> C.P. 58952 Morelia, Mich, MX
           </p>
-          <div class="d-flex">
-            <div class="d-inline-block">
+          <v-row>
+            <v-col cols="12" md="auto">
               <h2 class="white--text font-weight-medium mb-6">TELÉFONO</h2>
               <a href="#" class="link">[443] 358 6998</a><br>
               <a href="#" class="link">[443] 358 6998</a>
-            </div>
-            <div class="d-inline-block pl-12">
+            </v-col>
+            <v-col cols="12" md="auto" class="pl-12">
               <h2 class="white--text font-weight-medium mb-6">EMAIL</h2>
               <a href="#" class="link">said@adivergente.com</a><br>
               <a href="#" class="link">administración@adivergente.com</a>
+            </v-col>
+            <!-- <div class="d-inline-block">
             </div>
-          </div>
+            <div class="d-inline-block pl-12">
+            </div> -->
+          </v-row>
         </div>
       </v-col>
     </v-row>

@@ -4,7 +4,7 @@
       <a href="javascript:;" class="logo img_container">
         <img src="~assets/img/logo.png" alt="">
       </a>
-      <nav>
+      <nav class="d-none d-md-flex">
         <nuxt-link to="/">INICIO</nuxt-link>
         <nuxt-link to="#agencia">AGENCIA</nuxt-link>
         <nuxt-link to="#equipo">EQUIPO</nuxt-link>
@@ -89,7 +89,6 @@ header {
   padding-bottom: 1.3rem;
 }
 nav {
-  display: flex;
   align-items: center;
   justify-content: center;
   a {

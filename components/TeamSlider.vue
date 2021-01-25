@@ -1,5 +1,5 @@
 <template>
-  <div class="pl-12 py-6">
+  <div class="px-6 py-6 pr-sm-0">
     <div>
       <v-btn icon light>
         <v-icon>mdi-arrow-left</v-icon>
@@ -8,8 +8,8 @@
         <v-icon>mdi-arrow-right</v-icon>
       </v-btn>
     </div>
-    <v-row>
-      <v-col class="text-right bio">
+    <v-row class="bio py-2" no-gutters>
+      <v-col class="text-right px-sm-6" cols="12" sm="6">
         <h1 class="bio__name black--text">
           Said Gomez
         </h1>
@@ -23,7 +23,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quidem id quisquam veniam exercitationem itaque omnis nostrum cumque aspernatur iusto quae error unde quis incidunt recusandae ipsa velit, in molestias, minima nulla? Alias autem amet fugit hic magnam mollitia veniam totam, dignissimos quaerat? Aspernatur nisi dolore iusto quaerat, porro adipisci quasi quae architecto quod facere. Beatae numquam eveniet aut necessitatibus natus perspiciatis doloremque illum et quidem atque fuga asperiores fugit, laborum velit dolor nisi? Consectetur quidem eos illum nostrum rerum!
         </p>
       </v-col>
-      <v-col class="img_container">
+      <v-col class="img_container" cols="12" sm="6">
         <img src="/said.jpg" alt="">
       </v-col>
     </v-row>
@@ -62,6 +62,9 @@ export default {
       //   background: rgba(0,0,0,0.4);
       // }
     }
+  }
+  img {
+    filter: grayscale(1);
   }
 }
 </style>

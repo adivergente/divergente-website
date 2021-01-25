@@ -63,11 +63,16 @@ section {
   line-height: 1.8;
 }
 
-.py_section {
-  padding-top: 3em;
-  padding-bottom: 3em;
+.p_section {
+  padding: 3em 1.5em;
+  @media screen and ($tablet) {
+    padding: 3em 3.5em;
+  }
 }
 
+.w-100 {
+  width: 100%;
+}
 
 .img_container {
   overflow: hidden;

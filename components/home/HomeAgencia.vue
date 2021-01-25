@@ -1,12 +1,12 @@
 <template>
-  <section class="py_section px-12 black">
-    <div class="nav_marker" id="agencia"></div>
+  <section class="p_section black">
+    <div id="agencia" class="nav_marker"></div>
     <h1 class="section_title white--text mb-8">
       01/ <br>
       AGENCIA
     </h1>
     <v-row>
-      <v-col cols="auto" class="links">
+      <v-col cols="12" md="auto" class="links">
         <ul class="tabs">
           <li
             v-for="({title}, i) in links"
@@ -24,7 +24,7 @@
           </li>
         </ul>
       </v-col>
-      <v-col class="relative">
+      <v-col class="relative description">
         <span v-for="({description}, index) in links" :key="index">
           <transition name="tab-fade" mode="out-in">
             <span v-if="active == index" :key="index" class="value">
@@ -69,7 +69,15 @@ export default {
 .value {
   position: absolute;
   left: 0;
+  // display: inline-block;
+  padding: 0 12px;
   // transform: translateX(10px);
+}
+.description {
+  min-height: 300px;
+  @media screen and ($tablet) {
+    min-height: 200px;
+  }
 }
 .tab-fade-enter-active {
   transition: all 0.8s ease .3s;
@@ -81,7 +89,4 @@ export default {
   transform: translateX(10px);
   opacity: 0;
 }
-// .translate_top {
-//   transform: translateY(-5em);
-// }
 </style>
