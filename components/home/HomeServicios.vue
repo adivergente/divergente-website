@@ -32,31 +32,31 @@ export default {
           title: 'SOCIAL MEDIA'
         },
         {
-          img: '/socialmedia.jpg',
+          img: '/graphic.jpg',
           title: 'GRAPHIC SOLUTION'
         },
         {
-          img: '/socialmedia.jpg',
+          img: '/code.jpg',
           title: 'DEVELOPMENT'
         },
         {
-          img: '/socialmedia.jpg',
+          img: '/concept.jpg',
           title: 'CONCEPT'
         },
         {
-          img: '/socialmedia.jpg',
+          img: '/audiovisual.jpg',
           title: 'AUDIOVISUAL'
         },
         {
-          img: '/socialmedia.jpg',
+          img: '/estrategia.jpg',
           title: 'STRATEGY'
         },
         {
-          img: '/socialmedia.jpg',
+          img: '/print.jpg',
           title: 'PRINT'
         },
         {
-          img: '/socialmedia.jpg',
+          img: '/epicco.jpg',
           title: 'EPIC.CO'
         }
       ]

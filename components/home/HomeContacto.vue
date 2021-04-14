@@ -46,7 +46,7 @@
         <div class="pt-12 px-sm-12">
           <h2 class="white--text font-weight-medium mb-6">UBICACIÓN</h2>
           <p class="mb-12">
-            Av. Lázaro Cardenas #4586 Col. Chapultepec Oriente <br> C.P. 58952 Morelia, Mich, MX
+            Av. Lázaro Cardenas #2717 Col. Chapultepec <br> C.P. 58260 Morelia, Mich, MX
           </p>
           <v-row>
             <v-col cols="12" md="auto">

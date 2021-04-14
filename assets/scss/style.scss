@@ -9,6 +9,7 @@ body, html {
 a {
   text-decoration: none;
   columns: inherit;
+  // color: $text!important;
 }
 section {
   position: relative;
@@ -87,8 +88,16 @@ section {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.text--white {
+  color: #e2e2e2!important;
 }
 
 .v-application {
@@ -96,4 +105,17 @@ section {
   a {
     color: $text;
   }
+}
+
+.slide-translate-enter-active {
+  transition: all .7s ease .4s
+}
+
+.slide-translate-leave-active {
+  transition: all .7s cubic-bezier(1.0, 0.5, 0.8, 1.0)
+}
+
+.slide-translate-enter, .slide-translate-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
 }

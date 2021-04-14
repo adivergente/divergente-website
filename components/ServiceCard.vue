@@ -38,6 +38,7 @@ export default {
 .service {
   &__image {
     position: relative;
+    height: 400px;
     img {
       filter: grayscale(1);
       // transition: all 0.3s ease-out;

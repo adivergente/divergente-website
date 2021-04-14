@@ -11,20 +11,23 @@
     <v-row class="bio py-2" no-gutters>
       <v-col class="text-right px-sm-6" cols="12" sm="6">
         <h1 class="bio__name black--text">
-          Said Gomez
+          {{ user.name }}
         </h1>
-        <h3 class="bio__dpto mb-10">CEO Manager</h3>
+        <h3 class="bio__dpto mb-10">
+          {{ user.position }}
+        </h3>
         <ul class="skills mb-10">
-          <li>Cordinación</li>
-          <li>Administración</li>
-          <li>Comunicación</li>
+          <li
+            v-for="skill in user.skills"
+            :key="skill"
+          >
+            {{ skill }}
+          </li>
         </ul>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quidem id quisquam veniam exercitationem itaque omnis nostrum cumque aspernatur iusto quae error unde quis incidunt recusandae ipsa velit, in molestias, minima nulla? Alias autem amet fugit hic magnam mollitia veniam totam, dignissimos quaerat? Aspernatur nisi dolore iusto quaerat, porro adipisci quasi quae architecto quod facere. Beatae numquam eveniet aut necessitatibus natus perspiciatis doloremque illum et quidem atque fuga asperiores fugit, laborum velit dolor nisi? Consectetur quidem eos illum nostrum rerum!
-        </p>
+        <div v-html="user.bio"></div>
       </v-col>
       <v-col class="img_container" cols="12" sm="6">
-        <img src="/said.jpg" alt="">
+        <img :src="user.img" alt="">
       </v-col>
     </v-row>
   </div>
@@ -32,7 +35,21 @@
 
 <script>
 export default {
-  name: 'TeamSlider'
+  name: 'TeamSlider',
+  props: {
+    team: {
+      type: Array,
+      default: () => []
+    }
+  },
+  computed: {
+    user () {
+      /**
+        Temporary
+       */
+      return this.team[0] || {}
+    }
+  }
 }
 </script>
 

@@ -27,9 +27,7 @@
       <v-col class="relative description">
         <span v-for="({description}, index) in links" :key="index">
           <transition name="tab-fade" mode="out-in">
-            <span v-if="active == index" :key="index" class="value">
-              {{ description }}
-            </span>
+            <span v-if="active == index" :key="index" class="value" v-html="description"></span>
           </transition>
         </span>
       </v-col>
@@ -46,15 +44,15 @@ export default {
       links: [
         {
           title: 'MISIÓN',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos alias vel numquam commodi est dolorem, eius facere ducimus, aliquam obcaecati assumenda! Cum dolores, suscipit voluptatibus similique ipsum veniam nsectetur adipisicing elit. Debitis quos alias vel numquam commodi est dolorem, eius facere ducimu'
+          description: 'Nos enfocamos en atender los problemas y necesidades de cada cliente para poder ofrecerle soluciones y estrategias de comunicación online y offline que los ayuden a lograr objetivos específicos para potencializar su marca.'
         },
         {
           title: 'VISIÓN',
-          description: 'Eius facere ducimus, aliquam obcaecati assumenda! Cum dolores, suscipit voluptatibus similique ipsum veniam sequi consequatur. Minima, reiciendis ut dolorem, beatae cupiditate iure tempora nsectetur adipisicing elit. Debitis quos alias vel numquam commodi est dolorem, eius facere ducimu'
+          description: 'Ofrecer los mejores productos digitales a través de las herramientas adecuadas.'
         },
         {
           title: 'VALORES',
-          description: 'Doluptatibus similique ipsum veniam sequi consequatur. Minima, reiciendis ut dolorem, beatae cupiditate iure tempora ensectetur adipisicing elit. Debitis quos alias vel numquam commodi est dolorem, eius facere ducimu architecto cum ipsam suscipit pariatur vero modi? Officia consequatur corporis commodi?'
+          description: '<strong>Pasión</strong> en lo que hacemos. <br><strong>Calidad y liderazgo</strong> en cada proyecto. <br><strong>Empatía</strong> hacia los clientes y compañeros. <br> <strong>Responsabilidad</strong> para crear calidad e innovación. <br><strong>Audacia</strong> para resolver situaciones específicas.'
         }
       ]
     }

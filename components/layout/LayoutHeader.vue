@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <header class="px-12" :class="{ 'fixed_nav elevation-1': fixedNav }">
+    <header class="px-6 px-md-12" :class="{ 'fixed_nav elevation-1': fixedNav }">
       <a href="javascript:;" class="logo img_container">
         <img src="~assets/img/logo.png" alt="">
       </a>
@@ -55,6 +55,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+nav {
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  &:hover a, &:hover a.nuxt-link-exact-active {
+    color: #666;
+  }
+  a {
+    padding: 0 1em;
+    color: #ababab;
+    // text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.7);
+    transition: all 0.2s ease-out;
+    font-weight: 300;
+    font-size: 0.9em;
+    &:hover, &.nuxt-link-exact-active, &.nuxt-link-exact-active:hover {
+      color: #FFF;
+      // font-weight: 600;
+    }
+    &:hover {
+      transform: translateX(-0.3rem);
+    }
+  }
+}
+.logo {
+  width: 3rem;
+  transition: all 0.2s ease-out;
+  @media screen and ($desktop) {
+    width: 5em;
+  }
+}
+.btn_fixed {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: all 0.8s ease-out;
+  &__show {
+    opacity: 1;
+  }
+}
 .menu {
   position: absolute;
   top: 0;
@@ -70,51 +118,21 @@ export default {
     background: #000;
     transform: translateY(-100%);
     animation: menu .3s linear 0.3s forwards;
+    align-items: center;
+    nav {
+      flex-direction: row;
+      a {
+        font-size: 1.1rem;
+      }
+    }
     .logo {
-      width: 3.5rem;
+      width: 3rem;
     }
   }
 }
 @keyframes menu {
   to {
     transform: translateY(0);
-  }
-}
-header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
-}
-nav {
-  align-items: center;
-  justify-content: center;
-  a {
-    padding: 0 1em;
-    color: #f2f2f2;
-    // text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.7);
-    transition: all 0.2s ease-out;
-    font-weight: 300;
-    font-size: 1.1em;
-    &:hover, &.nuxt-link-exact-active {
-      color: #aaa;
-    }
-  }
-}
-.logo {
-  width: 6rem;
-  transition: all 0.2s ease-out;
-}
-.btn_fixed {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  opacity: 0;
-  transition: all 0.8s ease-out;
-  &__show {
-    opacity: 1;
   }
 }
 </style>

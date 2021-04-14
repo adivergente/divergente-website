@@ -19,7 +19,7 @@ export default {
       particlesJS('particles-js', {
         'particles': {
           'number': {
-            'value': 50,
+            'value': 90,
             'density': {
               'enable': true,
               'value_area': 800
@@ -60,7 +60,7 @@ export default {
           },
           'line_linked': {
             'enable': true,
-            'distance': 120,
+            'distance': 100,
             'color': '#e2e2e2',
             'opacity': 0.4,
             'width': 2
@@ -129,8 +129,10 @@ export default {
 
 <style>
 #particles-js {
-  width: 100%;
+  position: absolute;
+  /* width: 100vw; */
   height: 100%;
+  z-index: 1;
   /* background: cornflowerblue; */
 }
 </style>
