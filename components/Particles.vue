@@ -19,14 +19,14 @@ export default {
       particlesJS('particles-js', {
         'particles': {
           'number': {
-            'value': 90,
+            'value': 70,
             'density': {
               'enable': true,
-              'value_area': 800
+              'value_area': 850
             }
           },
           'color': {
-            'value': '#ffffff'
+            'value': '#cdcddc'
           },
           'shape': {
             'type': 'circle',
@@ -61,7 +61,7 @@ export default {
           'line_linked': {
             'enable': true,
             'distance': 100,
-            'color': '#e2e2e2',
+            'color': '#cdcddc',
             'opacity': 0.4,
             'width': 2
           },
@@ -80,45 +80,45 @@ export default {
             }
           }
         },
-        // 'interactivity': {
-        //   'detect_on': 'canvas',
-        //   'events': {
-        //     'onhover': {
-        //       'enable': false,
-        //       'mode': 'repulse'
-        //     },
-        //     'onclick': {
-        //       'enable': true,
-        //       'mode': 'push'
-        //     },
-        //     'resize': true
-        //   },
-        //   'modes': {
-        //     'grab': {
-        //       'distance': 800,
-        //       'line_linked': {
-        //         'opacity': 1
-        //       }
-        //     },
-        //     'bubble': {
-        //       'distance': 800,
-        //       'size': 80,
-        //       'duration': 2,
-        //       'opacity': 0.8,
-        //       'speed': 3
-        //     },
-        //     'repulse': {
-        //       'distance': 400,
-        //       'duration': 0.4
-        //     },
-        //     'push': {
-        //       'particles_nb': 4
-        //     },
-        //     'remove': {
-        //       'particles_nb': 2
-        //     }
-        //   }
-        // },
+        'interactivity': {
+          // 'detect_on': 'canvas',
+          'events': {
+            'onhover': {
+              'enable': false,
+              'mode': 'repulse'
+            },
+            'onclick': {
+              'enable': false,
+              'mode': 'push'
+            },
+            'resize': true
+          }
+          // 'modes': {
+          //   'grab': {
+          //     'distance': 800,
+          //     'line_linked': {
+          //       'opacity': 1
+          //     }
+          //   },
+          //   'bubble': {
+          //     'distance': 800,
+          //     'size': 80,
+          //     'duration': 2,
+          //     'opacity': 0.8,
+          //     'speed': 3
+          //   },
+          //   'repulse': {
+          //     'distance': 400,
+          //     'duration': 0.4
+          //   },
+          //   'push': {
+          //     'particles_nb': 4
+          //   },
+          //   'remove': {
+          //     'particles_nb': 2
+          //   }
+          // }
+        },
         'retina_detect': true
       })
     }
@@ -127,12 +127,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 #particles-js {
   position: absolute;
-  /* width: 100vw; */
+  top: 0;
+  left: 0;
   height: 100%;
   z-index: 1;
+  width: 100%;
   /* background: cornflowerblue; */
+  // @media screen and ($tablet) {
+  // }
 }
 </style>

@@ -6,6 +6,7 @@
           fab
           small
           :ripple="false"
+          :to="to"
         >
           <v-icon small>mdi-plus</v-icon>
         </v-btn>
@@ -29,6 +30,10 @@ export default {
     title: {
       type: String,
       default: ''
+    },
+    to: {
+      type: String,
+      default: '/'
     }
   }
 }

@@ -1,16 +1,17 @@
 <template>
   <section class="p_section black">
     <div id="servicios" class="nav_marker"></div>
-    <h1 class="section_title white--text mb-8">
+    <h1 class="section_title mb-8">
       03/ <br>
       SERVICIOS
     </h1>
     <div class="grid">
       <service-card
-        v-for="({img, title}, i) in items"
+        v-for="({img, title, to}, i) in items"
         :key="i"
         :img="img"
         :title="title"
+        :to="to"
       />
     </div>
 
@@ -29,35 +30,43 @@ export default {
       items: [
         {
           img: '/socialmedia.jpg',
-          title: 'SOCIAL MEDIA'
+          title: 'SOCIAL MEDIA',
+          to: '/'
         },
         {
           img: '/graphic.jpg',
-          title: 'GRAPHIC SOLUTION'
+          title: 'GRAPHIC SOLUTION',
+          to: '/'
         },
         {
           img: '/code.jpg',
-          title: 'DEVELOPMENT'
+          title: 'DEVELOPMENT',
+          to: '/'
         },
         {
           img: '/concept.jpg',
-          title: 'CONCEPT'
+          title: 'CONCEPT',
+          to: '/'
         },
         {
           img: '/audiovisual.jpg',
-          title: 'AUDIOVISUAL'
+          title: 'AUDIOVISUAL',
+          to: '/audiovisual'
         },
         {
           img: '/estrategia.jpg',
-          title: 'STRATEGY'
+          title: 'STRATEGY',
+          to: '/'
         },
         {
           img: '/print.jpg',
-          title: 'PRINT'
+          title: 'PRINT',
+          to: '/'
         },
         {
           img: '/epicco.jpg',
-          title: 'EPIC.CO'
+          title: 'EPIC.CO',
+          to: '/'
         }
       ]
     }

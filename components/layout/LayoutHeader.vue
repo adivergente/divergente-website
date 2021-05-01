@@ -67,9 +67,9 @@ nav {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  &:hover a, &:hover a.nuxt-link-exact-active {
-    color: #666;
-  }
+  // &:hover a {
+  //   color: #666;
+  // }
   a {
     padding: 0 1em;
     color: #ababab;
@@ -77,12 +77,35 @@ nav {
     transition: all 0.2s ease-out;
     font-weight: 300;
     font-size: 0.9em;
-    &:hover, &.nuxt-link-exact-active, &.nuxt-link-exact-active:hover {
-      color: #FFF;
-      // font-weight: 600;
-    }
     &:hover {
       transform: translateX(-0.3rem);
+    }
+  }
+}
+.theme {
+  &--dark {
+    nav {
+      &:hover a {
+        color: #666;
+      }
+      a {
+        &:hover, &.nuxt-link-exact-active, &.nuxt-link-exact-active:hover {
+          color: #FFF;
+        }
+      }
+    }
+  }
+  &--light {
+    nav {
+      &:hover a {
+        color: #ccc;
+      }
+      a {
+        &:hover, &.nuxt-link-exact-active, &.nuxt-link-exact-active:hover {
+          color: #111;
+          font-weight: 400;
+        }
+      }
     }
   }
 }

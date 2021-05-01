@@ -100,10 +100,21 @@ section {
   color: #e2e2e2!important;
 }
 
-.v-application {
-  color: $text!important;
-  a {
-    color: $text;
+.v-application.theme {
+  &--dark {
+    color: $text!important;
+    a {
+      color: $text;
+    }
+    .section_title {
+      color: #FFF;
+    }
+  }
+  &--light {
+    color: $text-light!important;
+    a {
+      color: $text-light;
+    }
   }
 }
 

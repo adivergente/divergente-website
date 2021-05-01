@@ -20,6 +20,9 @@ import Particles from '../components/Particles'
 export default {
   components: {
     Particles
+  },
+  created () {
+    this.$vuetify.theme.dark = true
   }
 }
 </script>
