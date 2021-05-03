@@ -6,10 +6,10 @@
       </a>
       <nav class="d-none d-md-flex">
         <nuxt-link to="/">INICIO</nuxt-link>
-        <nuxt-link to="#agencia">AGENCIA</nuxt-link>
-        <nuxt-link to="#equipo">EQUIPO</nuxt-link>
-        <nuxt-link to="#servicios">SERVICIOS</nuxt-link>
-        <nuxt-link to="#contacto">CONTACTO</nuxt-link>
+        <nuxt-link to="/#agencia">AGENCIA</nuxt-link>
+        <nuxt-link to="/#equipo">EQUIPO</nuxt-link>
+        <nuxt-link to="/#servicios">SERVICIOS</nuxt-link>
+        <nuxt-link to="/#contacto">CONTACTO</nuxt-link>
       </nav>
     </header>
     <v-btn
