@@ -71,6 +71,20 @@ section {
   }
 }
 
+.px_section {
+  padding: 0 1.5em;
+  @media screen and ($tablet) {
+    padding: 0 3.5em;
+  }
+}
+
+.pl_section {
+  padding-left: 1.5em;
+  @media screen and ($tablet) {
+    padding-left: 3.5em;
+  }
+}
+
 .w-100 {
   width: 100%;
 }
@@ -102,6 +116,7 @@ section {
 
 .video-preview {
   position: relative;
+  cursor: pointer;
   &--button {
     position: absolute;
     top: 0;
@@ -113,7 +128,7 @@ section {
     align-items: center;
   }
   &:hover .v-icon {
-    color: #1d99a7!important;
+    color: $secondary-c!important;
   }
 }
 
