@@ -41,7 +41,7 @@ export default {
         {
           img: '/code.jpg',
           title: 'DEVELOPMENT',
-          to: '/'
+          to: '/development'
         },
         {
           img: '/concept.jpg',

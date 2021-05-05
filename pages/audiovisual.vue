@@ -7,7 +7,10 @@
             AUDIOVISUAL
           </h1>
           <p>
-            Capturamos el mejor ángulo, contamos las mejores historias, comunicamos de la mejor forma el mensaje que quieres dar. Generamos fotografía y filmaciones de alto nivel, la calidad y las propuestas creativas nos hacen únicos en el mercado.
+            Capturamos el mejor ángulo, contamos las mejores historias, comunicamos de la mejor forma el mensaje que quieres dar.
+          </p>
+          <p>
+            Generamos fotografía y filmaciones de alto nivel, la calidad y las propuestas creativas nos hacen únicos en el mercado.
           </p>
         </v-col>
         <v-col cols="12">
@@ -20,9 +23,6 @@
             <li>Animación</li>
           </ul>
         </v-col>
-        <!-- <v-col cols="6">
-          <v-divider class="my-6"></v-divider>
-        </v-col> -->
       </v-row>
     </section>
     <div
