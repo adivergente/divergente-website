@@ -6,15 +6,19 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - divergente',
-    title: 'Divergente',
+    titleTemplate: 'Divergente - %s',
+    title: 'Digital Craft',
     htmlAttrs: {
       lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Agencia de Marketing' },
+      { hid: 'og:url', property: 'og:url', content: 'https://adivergente.com/' },
+      { hid: 'og:title', property: 'og:title', content: 'Divergente - Digital Craft' },
+      { hid: 'og:image', property: 'og:image', content: 'https://adivergente.com/img/social.jpg' },
+      { hid: 'og:description', property: 'og:description', content: 'Agencia de Marketing' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -39,7 +43,9 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    // https://google-analytics.nuxtjs.org/
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -63,6 +69,20 @@ export default {
         }
       }
     }
+  },
+
+  googleAnalytics: {
+    id: 'UA-202123946-1'
+  },
+
+  pageTransition: {
+    name: 'slide-fade',
+    mode: 'out-in'
+  },
+
+  layoutTransition: {
+    name: 'slide-fade',
+    mode: 'out-in'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

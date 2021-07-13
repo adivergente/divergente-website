@@ -1,18 +1,19 @@
 <template>
   <div class="service">
-    <div class="img_container service__image">
-      <div class="overlay">
-        <v-btn
-          fab
-          small
-          :ripple="false"
-          :to="to"
-        >
-          <v-icon small>mdi-plus</v-icon>
-        </v-btn>
+    <nuxt-link :to="to">
+      <div class="img_container service__image">
+        <div class="overlay">
+          <v-btn
+            fab
+            small
+            :ripple="false"
+          >
+            <v-icon small>mdi-plus</v-icon>
+          </v-btn>
+        </div>
+        <img :src="img" alt="">
       </div>
-      <img :src="img" alt="">
-    </div>
+    </nuxt-link>
     <h2 class="subtitle-1 service__title">
       {{ title }}
     </h2>

@@ -24,6 +24,16 @@
         </div>
       </div>
     </div>
+    <v-btn
+      v-if="dialog"
+      class="close"
+      small
+      fab
+      color="grey darken-3"
+      @click="dialog = false"
+    >
+      <v-icon>mdi-close</v-icon>
+    </v-btn>
     <v-dialog v-model="dialog">
       <div class="aspect-16-9 relative">
         <div class="bg-loading">

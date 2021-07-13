@@ -1,5 +1,5 @@
 <template>
-  <div class="audiovisual mb-6">
+  <div class="margin-top-page mb-6">
     <section class="px_section mb-12">
       <v-row>
         <v-col cols="12">
@@ -82,43 +82,33 @@ export default {
             }
           ]
         }
-        // {
-        //   title: 'Real Matlatl',
-        //   videos: [
-        //     {
-        //       id: '287lgYJ6nKY',
-        //       title: 'Semblanza a José María Morelos - Promotional',
-        //       location: 'Morelia'
-        //     }
-        //   ]
-        // }
       ]
     }
   },
   created () {
     // this.$vuetify.theme.dark = false
-  }
+  },
   // methods: {
   //   openVideo (id) {
   //     this.dialog = true
   //     this.src = `https://www.youtube.com/embed/${id}?modestbranding=1&rel=0&controls=1&autoplay=1`
   //   }
-  // }
+  // },
+  head: {
+    title: 'Audiovisual',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Capturamos el mejor ángulo, contamos las mejores historias, comunicamos de la mejor forma el mensaje que quieres dar.'
+      },
+      { hid: 'og:url', property: 'og:url', content: 'https://adivergente.com/audiovisual' },
+      { hid: 'og:title', property: 'og:title', content: 'Audiovisual - Divergente' },
+      { hid: 'og:description', property: 'og:description', content: 'Capturamos el mejor ángulo, contamos las mejores historias, comunicamos de la mejor forma el mensaje que quieres dar.' }
+    ]
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-.audiovisual {
-  margin-top: 9rem;
-}
-.list-row {
-  display: flex;
-  padding-left: 0;
-  li {
-    margin-left: 2rem;
-    &:first-child {
-      margin-left: 1rem;
-    }
-  }
-}
 </style>

@@ -29,42 +29,42 @@ export default {
     return {
       items: [
         {
-          img: '/socialmedia.jpg',
+          img: '/img/socialmedia.jpg',
           title: 'SOCIAL MEDIA',
           to: '/'
         },
         {
-          img: '/graphic.jpg',
+          img: '/img/graphic.jpg',
           title: 'GRAPHIC SOLUTION',
-          to: '/'
+          to: '/graphic-solution'
         },
         {
-          img: '/code.jpg',
+          img: '/img/code.jpg',
           title: 'DEVELOPMENT',
           to: '/development'
         },
         {
-          img: '/concept.jpg',
+          img: '/img/concept.jpg',
           title: 'CONCEPT',
           to: '/'
         },
         {
-          img: '/audiovisual.jpg',
+          img: '/img/audiovisual.jpg',
           title: 'AUDIOVISUAL',
           to: '/audiovisual'
         },
         {
-          img: '/estrategia.jpg',
+          img: '/img/estrategia.jpg',
           title: 'STRATEGY',
           to: '/'
         },
         {
-          img: '/print.jpg',
+          img: '/img/print.jpg',
           title: 'PRINT',
           to: '/'
         },
         {
-          img: '/epicco.jpg',
+          img: '/img/epicco.jpg',
           title: 'EPIC.CO',
           to: '/'
         }

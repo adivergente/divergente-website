@@ -1,9 +1,9 @@
 <template>
   <div class="menu">
     <header class="px-6 px-md-12" :class="{ 'fixed_nav elevation-1': fixedNav }">
-      <a href="javascript:;" class="logo img_container">
+      <nuxt-link to="/" class="logo img_container">
         <img src="~assets/img/logo.png" alt="">
-      </a>
+      </nuxt-link>
       <nav class="d-none d-md-flex">
         <nuxt-link to="/">INICIO</nuxt-link>
         <nuxt-link to="/#agencia">AGENCIA</nuxt-link>
@@ -146,6 +146,7 @@ nav {
       flex-direction: row;
       a {
         font-size: 1.1rem;
+        transform: none;
       }
     }
     .logo {

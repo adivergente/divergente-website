@@ -1,5 +1,5 @@
 <template>
-  <div class="audiovisual mb-6">
+  <div class="margin-top-page mb-6">
     <section class="px_section mb-12">
       <v-row class="mb-8">
         <v-col cols="12">
@@ -47,6 +47,16 @@
           />
         </v-col>
       </v-row>
+      <v-btn
+        v-if="dialog"
+        class="close"
+        small
+        fab
+        color="grey darken-3"
+        @click="dialog = false"
+      >
+        <v-icon>mdi-close</v-icon>
+      </v-btn>
       <v-dialog v-model="dialog">
         <div v-if="src.url">
           <div class="aspect-16-9 relative">
@@ -76,7 +86,7 @@
 <script>
 import ImageCard from '@/components/ImageCard'
 export default {
-  name: 'Audiovisual',
+  name: 'Development',
   components: {
     ImageCard
   },
@@ -92,12 +102,12 @@ export default {
         },
         {
           title: 'Hotel Los Juaninos',
-          url: 'http://hoteljuaninos.com.mx/',
+          url: 'https://hoteljuaninos.com.mx/',
           image: require('@/assets/img/development/juaninos.jpg')
         },
         {
           title: 'Scamol',
-          url: 'http://scamol.com/',
+          // url: 'https://scamol.com/',
           image: require('@/assets/img/development/scamol.jpg')
         },
         {
@@ -107,27 +117,27 @@ export default {
         },
         {
           title: 'Dr. Habid Soto',
-          url: 'http://drhabidsoto.com/',
+          url: 'https://drhabidsoto.com/',
           image: require('@/assets/img/development/drhabid.jpg')
         },
         {
           title: 'Reface',
-          url: 'http://reface.com.mx/',
+          url: 'https://reface.com.mx/',
           image: require('@/assets/img/development/reface.jpg')
         },
         {
           title: 'Grand María',
-          // url: 'http://reface.com.mx/',
+          // url: 'https://reface.com.mx/',
           image: require('@/assets/img/development/grandmaria.jpg')
         },
         {
           title: 'Quinta María José',
-          // url: 'http://reface.com.mx/',
+          // url: 'https://reface.com.mx/',
           image: require('@/assets/img/development/qmj.jpg')
         },
         {
           title: 'Casa Don Pascual',
-          url: 'http://casadonpascual.com/',
+          url: 'https://casadonpascual.com/',
           image: require('@/assets/img/development/casadonpascual.jpg')
         },
         {
@@ -143,22 +153,22 @@ export default {
       this.dialog = true
       this.src = { url, image }
     }
+  },
+  head: {
+    title: 'Development',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Apoyamos al crecimiento de tu empresa a través de la implementación de tecnología.'
+      },
+      { hid: 'og:url', property: 'og:url', content: 'https://adivergente.com/development' },
+      { hid: 'og:title', property: 'og:title', content: 'Development - Divergente' },
+      { hid: 'og:description', property: 'og:description', content: 'Apoyamos al crecimiento de tu empresa a través de la implementación de tecnología.' }
+    ]
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.audiovisual {
-  margin-top: 9rem;
-}
-.list-row {
-  display: flex;
-  padding-left: 0;
-  li {
-    margin-left: 2rem;
-    &:first-child {
-      margin-left: 1rem;
-    }
-  }
-}
 </style>

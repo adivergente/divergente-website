@@ -84,11 +84,11 @@ export default {
               ],
               bio: `
                 <p>
-                  Lic. en Administración, egresado de la UMSNH con posgrado en Mercadotecnia (Universidads La Salle Morelia). Amplia experiencia en el sector turístico estatal y nacional. Representante de Tesoros de Michoacán.
+                  Lic. en Administración, egresado de la UMSNH con posgrado en Mercadotecnia (Universidad La Salle Morelia). Amplia experiencia en el sector turístico estatal y nacional. Representante de Tesoros de Michoacán.
                 </p>
                 <p>Líder emprendedor, amante de la buena música y los temas de interés.</p>
               `,
-              img: '/said.jpg'
+              img: '/team/said.jpg'
             }
           ]
         },
@@ -111,7 +111,7 @@ export default {
                   Emprendedora desde 2016. Me gusta apoyar en todo momento, ver oportunidades en donde muchos ven problemas y ayudar a que las cosas siempre sean mejores para nuestros clientes y el equipo.
                 </p>
               `,
-              img: '/dafne.jpg'
+              img: '/team/dafne.jpg'
             }
           ]
         },
@@ -131,7 +131,7 @@ export default {
                   Mi nombre es Oscar Mosqueda. Licenciado en Ciencias de la Comunicación, comencé mi experiencia profesional en la comunicación digital en el 2013 como Project Manager pero siempre de la mano del lado creativo, brindando soluciones particulares a cada cliente de acuerdo a sus objetivos. Mimetizando el bagaje cultural de cada región para la creación de contenidos.
                 </p>
               `,
-              img: '/oscar.jpg'
+              img: '/team/oscar.jpg'
             }
           ]
         },
@@ -154,7 +154,7 @@ export default {
                   Creo  firmemente en la guía de las habilidades del individuo para crear sinergia y potencializar sus  resultados.  Mi lema... "¡Keep it Simple!"
                 </p>
               `,
-              img: '/tay.jpg'
+              img: '/team/tay.jpg'
             }
           ]
         },
@@ -183,7 +183,7 @@ export default {
                   "<i>Amor por aprender</i>"
                 </p>
               `,
-              img: '/daniel.jpg'
+              img: '/team/daniel.jpg'
             }
           ]
         }
