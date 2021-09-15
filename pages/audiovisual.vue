@@ -40,6 +40,38 @@
         </v-col>
       </v-row>
     </div>
+    <section class="px_section mb-12 py-12">
+      <v-row>
+        <v-col
+          cols="12"
+        >
+          <img
+            v-for="i in 7"
+            :key="i"
+            :src="require(`~/assets/img/photo/book_page-000${i}.jpg`)" alt=""
+            class="w-100"
+          >
+          <img
+            v-for="i in 9"
+            :key="i"
+            :src="require(`~/assets/img/photo/pp_page-000${i}.jpg`)" alt=""
+            class="w-100"
+          >
+          <img
+            :src="require('~/assets/img/photo/pp_page-0010.jpg')" alt=""
+            class="w-100"
+          >
+          <!-- <img
+            :src="require('~/assets/img/photo/book_page-0008.jpg')" alt=""
+            class="w-100"
+          > -->
+          <img
+            :src="require(`~/assets/img/photo/pp_page-0011.jpg`)" alt=""
+            class="w-100"
+          >
+        </v-col>
+      </v-row>
+    </section>
   </div>
 </template>
 

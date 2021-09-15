@@ -36,7 +36,7 @@ export default {
         {
           img: '/img/graphic.jpg',
           title: 'GRAPHIC SOLUTION',
-          to: '/graphic-solution'
+          to: '/'
         },
         {
           img: '/img/code.jpg',
