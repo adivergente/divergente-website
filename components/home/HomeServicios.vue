@@ -64,8 +64,8 @@ export default {
           to: '/'
         },
         {
-          img: '/img/epicco.jpg',
-          title: 'EPIC.CO',
+          img: '/img/experience.jpg',
+          title: 'EXPERIENCE',
           to: '/'
         }
       ]
