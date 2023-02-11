@@ -14,7 +14,7 @@
     "core-js": "^3.8.2",
     "nuxt": "^2.14.12",
     "particles.js": "^2.0.0",
-    "swiper": "^6.5.9",
+    "swiper": "^5.4.5",
     "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {

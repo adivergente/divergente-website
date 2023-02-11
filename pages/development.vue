@@ -7,10 +7,10 @@
             DEVELOPMENT
           </h1>
           <p>
-            Desarrollamos tecnología.
+            Desarrollo y tecnología.
           </p>
           <p>
-            Apoyamos al crecimiento de tu empresa a través de la implementación de tecnología y ofrecemos soluciones eficientes que permiten optimizar procesos y  mostrar a tus clientes los productos y/o  servicios que ofreces.
+            Desarrollo de la pagina web a tu medid. Pensada y diseñada para eficientar tus procesos de  compra, reserva, comunicación y por supuesto embellecer y enaltecer tu valor en el mundo  digital.
           </p>
         </v-col>
         <v-col cols="12">

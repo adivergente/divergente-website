@@ -7,7 +7,7 @@
           02/ <br>
           EQUIPO
         </h1>
-        <ul class="tabs">
+        <ul class="tabs columns">
           <li
             v-for="({name, text}) in links"
             :key="name"
@@ -47,32 +47,44 @@ export default {
   },
   data () {
     return {
-      active: 'direccion',
+      active: 'said',
       links: [
         {
-          name: 'direccion',
-          text: 'DIRECCIÓN'
+          name: 'said',
+          text: 'Said'
         },
         {
-          name: 'administracion',
-          text: 'ADMINISTRACIÓN'
+          name: 'kaled',
+          text: 'Kaled'
         },
         {
-          name: 'creatividad',
-          text: 'CREATIVIDAD'
+          name: 'majo',
+          text: 'Majo'
         },
         {
-          name: 'talento',
-          text: 'TALENTO'
+          name: 'noemi',
+          text: 'Noemi'
         },
         {
-          name: 'estrategia',
-          text: 'ESTRATEGIA'
+          name: 'alan',
+          text: 'Alan'
+        },
+        {
+          name: 'arturo',
+          text: 'Arturo'
+        },
+        {
+          name: 'juan',
+          text: 'Juan'
+        },
+        {
+          name: 'luis',
+          text: 'Luis'
         }
       ],
       teams: [
         {
-          name: 'direccion',
+          name: 'said',
           data: [
             {
               name: 'Said Gomez',
@@ -93,97 +105,136 @@ export default {
           ]
         },
         {
-          name: 'administracion',
+          name: 'kaled',
           data: [
             {
-              name: 'Dafne Tapia',
-              position: 'Administración',
+              name: 'Kaled Gómez',
+              position: 'Content Manager',
               skills: [
-                'Emprendedora',
+                'Emprendedor',
+                'Creativo'
+              ],
+              bio: `
+                <p>
+                  Soy un joven estudiante y trabajador que quiere cumplir todas las metas propuestas por él y su familia, con hambre y sed de éxito para poder llevar a cabo la vida que siempre he soñado, fui nacido y criado en Morelia, Michoacán.
+                </p>
+              `,
+              img: '/team/kaled.jpg'
+            }
+          ]
+        },
+        {
+          name: 'majo',
+          data: [
+            {
+              name: 'Majo Pantoja',
+              position: 'Cordinadora Concept & Experience',
+              skills: [
                 'Creativa',
-                'Estrategia'
+                'Emprendedora',
+                'Organizacional'
               ],
               bio: `
                 <p>
-                  Soy Dafne Tapia, Ing. en Gestión Empresarial, apasionada por el turismo y por crear e innovar en todos los sentidos.
-                </p>
-                <p>
-                  Emprendedora desde 2016. Me gusta apoyar en todo momento, ver oportunidades en donde muchos ven problemas y ayudar a que las cosas siempre sean mejores para nuestros clientes y el equipo.
+                  Lic. En administración hotelera y turística de la universidad interamericana para el desarrollo, con experiencia amplia en manejo de ventas y en organización de eventos de temática altruista y líder emprendedora, apasionada por las causas sociales.
                 </p>
               `,
-              img: '/team/dafne.jpg'
+              img: '/team/majo.jpg'
             }
           ]
         },
         {
-          name: 'creatividad',
+          name: 'luis',
           data: [
             {
-              name: 'Oscar Mosqueda',
-              position: 'Creatividad / Community Manager',
+              name: 'Luis Montoya',
+              position: 'Content Manager',
               skills: [
                 'Emprendedor',
-                'Creativo',
-                'Estrategia'
+                'Creativo'
               ],
               bio: `
                 <p>
-                  Mi nombre es Oscar Mosqueda. Licenciado en Ciencias de la Comunicación, comencé mi experiencia profesional en la comunicación digital en el 2013 como Project Manager pero siempre de la mano del lado creativo, brindando soluciones particulares a cada cliente de acuerdo a sus objetivos. Mimetizando el bagaje cultural de cada región para la creación de contenidos.
+                  Soy Luis Montoya, soy estudiante de Administrador de empresas del Tec de Monterrey. De mis fortalezas puedo destacar la de tomas de decisión y estrategia. El trabajo en equipo es lo más importante para mí, me considero proactivo, lo que aumenta la eficacia en los proyectos.
                 </p>
               `,
-              img: '/team/oscar.jpg'
+              img: '/team/luis.jpg'
             }
           ]
         },
         {
-          name: 'talento',
+          name: 'noemi',
           data: [
             {
-              name: 'Taygette Orozco',
-              position: 'Talento y Estructura',
+              name: 'Noemi Alarcon',
+              position: 'Diseñadora',
               skills: [
                 'Emprendedor',
-                'Creativo',
-                'Estrategia'
+                'Creativo'
               ],
               bio: `
                 <p>
-                  Mercadologa  enfocada siempre a una mejora continua. ¿Mi mayor habilidad? el storytelling, ya que son las historias, la herramienta más poderosa para comunicar qué haces, quién eres y qué vendes, a lo largo 10 años de carrera laboral he usado este enfoque para conectar y  lograr una experiencia y satisfacción  de clientes tanto internos como externos.
-                </p>
-                <p>
-                  Creo  firmemente en la guía de las habilidades del individuo para crear sinergia y potencializar sus  resultados.  Mi lema... "¡Keep it Simple!"
+                  Diseñadora experta en múltiples áreas. Todas mis técnicas y enseñanzas las aplico en mis trabajos. Mi lado creativo siempre lo exploro y puedo hacer trabajos atractivos para todos. Brindo mi creatividad en todos los diseños que hago, plasmando los objetivos que tiene cada cliente. Mi experiencia laboral me ha ayudado a enfocarme y sacar lo que los clientes deseen.
                 </p>
               `,
-              img: '/team/tay.jpg'
+              img: '/team/noemi.jpg'
             }
           ]
         },
         {
-          name: 'estrategia',
+          name: 'juan',
           data: [
             {
-              name: 'Daniel Ceballos',
-              position: 'Estrategia & Pauta',
+              name: 'Juan Calderón',
+              position: 'Fotografía y Video',
               skills: [
                 'Emprendedor',
-                'Creativo',
-                'Estrategia'
+                'Creativo'
               ],
               bio: `
                 <p>
-                  Marketero digital altamente motivado y enfocado en el progreso. He ideado iniciativas estratégicas que han ayudado a diferentes compañías en su crecimiento digital y ventas online.
-                </p>
-                <p>
-                  Soy solucionador de problemas capaz y consistente, hábil para priorizar y administrar proyectos con competencia.
-                </p>
-                <p>
-                  Soy progresista y estoy en sintonía con los nuevos desarrollos en su campo. Eficaz y colaborador con fuertes talentos de gestión. Disfruto de sesiones de lluvia de ideas colectivas que permitan coordinar actividades para lograr un objetivo común.
-                </p>
-                <p>
-                  "<i>Amor por aprender</i>"
+                  Soy Juan Calderón, estudiante de cine, apasionada por el arte, la fotografía. Me gusta siempre inovar y estar creando nuevas cosas.
                 </p>
               `,
-              img: '/team/daniel.jpg'
+              img: '/team/juan.jpg'
+            }
+          ]
+        },
+        {
+          name: 'arturo',
+          data: [
+            {
+              name: 'Arturo Marín',
+              position: 'Fotografía y Video',
+              skills: [
+                'Emprendedor',
+                'Creativo'
+              ],
+              bio: `
+                <p>
+                  Estudiante en Arte y Producción Cinematográfica en la Universidad Vasco de Quiroga. Visionario, amante del cine y el deporte. Apoyado a ser bueno trabajando en equipo con una comunicación directa.
+                </p>
+              `,
+              img: '/team/arturo.jpg'
+            }
+          ]
+        },
+        {
+          name: 'alan',
+          data: [
+            {
+              name: 'Alan Carrillo',
+              position: 'Senior Motion Graphics Designer & Filmmaker',
+              skills: [
+                // 'Emprendedor',
+                // 'Creativo'
+              ],
+              bio: `
+                <p>
+                  Más de 15 años creando videos y más 10 de ellos profesionalmente con enfoque empresarial y político. Emiratos Árabes, Estambul, Estados Unidos, Bélgica, Suiza, son algunos de los países que han contado con su trabajo remoto. Comisión de comunicación del movimiento #yosoy132, Campaña presidencial Evo Morales 2014 y Campaña a Gobernador de Alfredo Ramírez Bedolla 2021, son algunas de las producciones más significativas en su carrera.
+                </p>
+              `,
+              img: '/team/alan.jpg'
             }
           ]
         }
