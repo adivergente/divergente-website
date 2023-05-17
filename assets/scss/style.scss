@@ -57,6 +57,16 @@ section {
       padding-left: 0.2em;
     }
   }
+
+  &.columns {
+    width: 250px;
+    columns: 50px 2;
+    // column-count: 2;
+    // column-width: 80px;
+    // li {
+    //   width: 50px;
+    // }
+  }
 }
 
 .section_title {

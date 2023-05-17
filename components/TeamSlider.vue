@@ -1,27 +1,27 @@
 <template>
   <div class="px-6 py-6 pr-sm-0">
-    <div>
+    <!-- <div>
       <v-btn icon light>
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
       <v-btn icon light>
         <v-icon>mdi-arrow-right</v-icon>
       </v-btn>
-    </div>
+    </div> -->
     <v-row class="bio py-2" no-gutters>
       <v-col class="text-right px-sm-6" cols="12" sm="6">
         <h1 class="bio__name black--text">
           {{ user.name }}
         </h1>
-        <h3 class="bio__dpto mb-10">
+        <h4 class="bio__dpto mb-5">
           {{ user.position }}
-        </h3>
-        <ul class="skills mb-10">
+        </h4>
+        <ul class="skills mb-5">
           <li
             v-for="skill in user.skills"
             :key="skill"
           >
-            {{ skill }}
+            {{ skill }} -
           </li>
         </ul>
         <div v-html="user.bio"></div>
@@ -68,6 +68,10 @@ export default {
       list-style-type: none;
       padding: 0.1em;
       position: relative;
+      line-height: 1;
+      font-size: 0.9rem;
+      color: #646464;
+      // font-style: italic;
 
       // &::after {
       //   content: "";

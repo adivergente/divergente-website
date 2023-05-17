@@ -44,15 +44,21 @@ export default {
       links: [
         {
           title: 'MISIÓN',
-          description: 'Nos enfocamos en atender los problemas y necesidades de cada cliente para poder ofrecerle soluciones y estrategias de comunicación online y offline que los ayuden a lograr objetivos específicos para potencializar su marca.'
+          description: 'Potencializar y llevar tu marca al siguiente nivel a través de herramientas y estrategias de  comunicación que nos permitan destacar tus fortalezas y pulir tus las zonas de oportunidad.'
         },
         {
           title: 'VISIÓN',
-          description: 'Ofrecer los mejores productos digitales a través de las herramientas adecuadas.'
+          description: 'Ser referente y punta de lanza en la industria del marketing, destacándonos por las ideasos mejores productos digitales a través de las herramientas ainnovadoras y ejecuciones disruptivas que generamos, marcando tendencia y generando un sello personal y único en cada proyecto.'
         },
         {
           title: 'VALORES',
-          description: '<strong>Pasión</strong> en lo que hacemos. <br><strong>Calidad y liderazgo</strong> en cada proyecto. <br><strong>Empatía</strong> hacia los clientes y compañeros. <br> <strong>Responsabilidad</strong> para crear calidad e innovación. <br><strong>Audacia</strong> para resolver situaciones específicas.'
+          description: `
+            - <strong>Pasión</strong> en los resultados. <br>
+            - <strong>Calidad y liderazgo</strong> en cada proyecto. <br>
+            - <strong>Velocidad</strong> en reacción y ejecución. <br>
+            - <strong>Audacia</strong> para resolución de problemas. <br>
+            - <strong>Atención</strong> en los detalles.
+          `
         }
       ]
     }

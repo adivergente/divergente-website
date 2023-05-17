@@ -7,10 +7,10 @@
             AUDIOVISUAL
           </h1>
           <p>
-            Capturamos el mejor ángulo, contamos las mejores historias, comunicamos de la mejor forma el mensaje que quieres dar.
+            Pre producción, producción y post producción de contenido auditivo, visual o audiovisual de tu  producto o servicio, ya sea paracomunicación dentro y fuera de tu venue, para inmortalizar un  evento o experiencias o bien para comunicación activa en tus canales digitales.
           </p>
           <p>
-            Generamos fotografía y filmaciones de alto nivel, la calidad y las propuestas creativas nos hacen únicos en el mercado.
+            Formato fotográfico, video y/o animación, desde un reel hasta lo que tu imaginación demande.
           </p>
         </v-col>
         <v-col cols="12">
@@ -46,15 +46,15 @@
           cols="12"
         >
           <img
-            v-for="i in 7"
-            :key="i"
-            :src="require(`~/assets/img/photo/book_page-000${i}.jpg`)" alt=""
+            v-for="k in 7"
+            :key="k"
+            :src="require(`~/assets/img/photo/book_page-000${k}.jpg`)" alt=""
             class="w-100"
           >
           <img
-            v-for="i in 9"
-            :key="i"
-            :src="require(`~/assets/img/photo/pp_page-000${i}.jpg`)" alt=""
+            v-for="j in 9"
+            :key="j"
+            :src="require(`~/assets/img/photo/pp_page-000${j}.jpg`)" alt=""
             class="w-100"
           >
           <img

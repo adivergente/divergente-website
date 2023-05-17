@@ -7,7 +7,7 @@
           04/ <br>
           HABLEMOS
         </h1>
-        <v-form>
+        <!-- <v-form>
           <v-text-field
             label="Nombre"
             color="#FFF"
@@ -40,7 +40,25 @@
               :ripple="false"
             >enviar</v-btn>
           </div>
-        </v-form>
+        </v-form> -->
+        <div class="d-flex justify-space-between">
+          <div class="d-inline-block">
+            <a href="https://www.facebook.com/DivergenteAgency" target="_blank" rel="noopener noreferrer" class="link">
+              <v-icon small color="#ddd">mdi-plus</v-icon>
+              FACEBOOK
+            </a> <br>
+            <a href="https://www.instagram.com/divergente.digitalcraft" target="_blank" rel="noopener noreferrer" class="link">
+              <v-icon small color="#ddd">mdi-plus</v-icon>
+              INSTAGRAM
+            </a>
+          </div>
+          <!-- <v-btn
+            color="#f2f2f2"
+            light
+            tile
+            :ripple="false"
+          >enviar</v-btn> -->
+        </div>
       </v-col>
       <v-col>
         <div class="pt-12 px-sm-12">
@@ -51,13 +69,12 @@
           <v-row>
             <v-col cols="12" md="auto">
               <h2 class="white--text font-weight-medium mb-6">TELÉFONO</h2>
-              <a href="#" class="link">[443] 358 6998</a><br>
-              <a href="#" class="link">[443] 358 6998</a>
+              <a href="tel:4433586998" class="link">[443] 358 6998</a>
             </v-col>
             <v-col cols="12" md="auto" class="pl-12">
               <h2 class="white--text font-weight-medium mb-6">EMAIL</h2>
-              <a href="#" class="link">said@adivergente.com</a><br>
-              <a href="#" class="link">administración@adivergente.com</a>
+              <a href="mailto:said@adivergente.com" class="link">said@adivergente.com</a><br>
+              <a href="mailto:administración@adivergente.com" class="link">administración@adivergente.com</a>
             </v-col>
             <!-- <div class="d-inline-block">
             </div>
