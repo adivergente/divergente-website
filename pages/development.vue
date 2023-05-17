@@ -10,7 +10,7 @@
             Desarrollo y tecnología.
           </p>
           <p>
-            Desarrollo de la pagina web a tu medid. Pensada y diseñada para eficientar tus procesos de  compra, reserva, comunicación y por supuesto embellecer y enaltecer tu valor en el mundo  digital.
+            Desarrollo de la pagina web a tu medida. Pensada y diseñada para eficientar tus procesos de  compra, reserva, comunicación y por supuesto embellecer y enaltecer tu valor en el mundo  digital.
           </p>
         </v-col>
         <v-col cols="12">
