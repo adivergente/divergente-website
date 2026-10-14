@@ -87,5 +87,22 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    optimizeCSS: false,
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        // Disabled: clean-css (used internally for CSS minification)
+        // crashes on this project's generated CSS with
+        // "TypeError: Cannot read properties of undefined (reading '1')"
+        minifyCSS: false,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true
+      }
+    }
   }
 }
